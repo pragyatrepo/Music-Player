@@ -1,5 +1,6 @@
 console.log("Welcome to Music player");
 let songindex=1;
+let src=`recent${songindex}.jpg`;
 let audioElement = new Audio('songs/1.mp3');
 let songs=[
      {songname:"kana yari" ,filepath:"songs/1.mp3",coverpath:"covers/cover1.jpg"},
@@ -16,11 +17,13 @@ Play.addEventListener('click', ()=>{
         Play.classList.remove('fa-play-circle');
         Play.classList.add('fa-pause-circle');
         mastersongname.innerText="Song name- "+songs[songindex-1].songname;
+        document.getElementById('playm').innerText='Pause'
     }
     else{
         audioElement.pause();
         Play.classList.remove('fa-pause-circle');
         Play.classList.add('fa-play-circle');
+        document.getElementById('playm').innerText='Play'
     }
 })
 
@@ -55,7 +58,8 @@ document.getElementById('next').addEventListener('click',()=>{
     Play.classList.remove('fa-play-circle');
     Play.classList.add('fa-pause-circle');
     //displays songname in bottom
-    mastersongname.innerText="Song name- "+songs[songindex-1].songname
+    mastersongname.innerText="Song name- "+songs[songindex-1].songname;
+    src=`recent${songindex}.jpg`;
     
 })
 
@@ -76,7 +80,8 @@ document.getElementById('previous').addEventListener('click',()=>{
     Play.classList.remove('fa-play-circle');
     Play.classList.add('fa-pause-circle');
     //displays songname in bottom
-    mastersongname.innerText="Song name- " + songs[songindex-1].songname
+    mastersongname.innerText="Song name- " + songs[songindex-1].songname;
+    src=`recent${songindex}.jpg`;
     
 })
 // horizontal scrolling trending
@@ -110,7 +115,7 @@ const theme=()=>{
     if (document.body.classList.contains('light-mode')){
         document.getElementById('modetip').innerText="Switch tod dark mode";
         icons.classList.remove('fa-solid fa-sun');
-        // icons.classList.add('fa-solid fa-moon');
+        icons.classList.add('fa-solid fa-moon');
         
         
     } 
@@ -146,6 +151,10 @@ audioElement.addEventListener('ended',()=>{
         }}
 
 )
+
+//cover image
+let image=document.getElementById('cover');
+image.src=src;
 
 // console.log(songitems.length);
 // Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{

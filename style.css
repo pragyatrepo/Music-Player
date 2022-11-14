@@ -84,9 +84,9 @@ li input{
     height: 50vh;
     padding: 2px;
     margin-bottom: 0vw;
-    
-
 }
+
+/* scroll */
 #left-scroll{
     top:30vh;
     left: 1.5vw;
@@ -111,7 +111,7 @@ li input{
     top:120vh;
     right:1.5vw;    
 }
-/*  */
+/* scroll ends */
 
 /* bottom section starts here */
 
@@ -127,6 +127,7 @@ li input{
     width: 80vw;
     margin: auto;      
 }
+/* icon display */
 #next{
     color:var(--color);
     font-size: 20px;
@@ -135,23 +136,84 @@ li input{
     color:var(--color);
     font-size: 20px;
 }
+#shuffle{
+    color:var(--color);
+    font-size: 20px;
 
-#masterplay{
-    font-size: 30px;
+}
+
+#masterPlay{
+    font-size: 40px;
 }
 #mastersongname{
     color:var(--color);
 }
 #repeat{
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
 }
-
-.time{
-    color: var(--color);
+#queue{
+    color:var(--color);
+    font-size: 20px;
 }
 .icons i{
     cursor: pointer;
+    margin-right: 2vw;
+}
+/* icon display ends */
+
+/* tooltip hide and display */
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    background-color: azure;
+    color: var(--background);
+    border: solid 1px ;
+    font-size: 0.8vw;
+    width: 6vw;
+    height: 3vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#repeat:hover #repeatm{
+    visibility: visible;
+    top:8vh;
+    left:31vw;
+}
+#shuffle:hover #shufflem{
+    visibility: visible;
+    top:8vh;
+    left:47vw;
+}
+#masterPlay:hover #playm{
+    visibility: visible;
+    top:9vh;
+    left:38vw;
+    width:3vw;
+    
+}
+#previous:hover #previousm{
+    visibility: visible;
+    top:8vh;
+    left:35vw;
+}
+#next:hover #nextm{
+    visibility: visible;
+    top:8vh;
+    left:39w;
+    width:2vw;
+}
+#queue:hover #queuem{
+    visibility: visible;
+    top:8vh;
+    left:39w;
+    width:3vw;
+}
+/* tooltip hide and display ends */
+
+/* time display */
+.time{
+    color: var(--color);
 }
 #myprogressbar{
     position:absolute;
@@ -166,21 +228,6 @@ li input{
 }
 
 
-#repeatm{
-    visibility: hidden;
-    position: absolute;
-    top:5vh;
-    left:29vw;
-    background-color: var(--background);
-    color: var(--color);
-    border: solid 1px ;
-    font-size: 0.5vw;
-    width: 6vw;
-    height: 3vh;
-}
-#repeat:hover #repeatm{
-    visibility: visible;
-}
 
 /* utiity classes */
 
@@ -209,7 +256,6 @@ li input{
     margin-right: 1vw;
     margin-bottom: 1vw;
     justify-content: space-between;
-    
 }
 
 .flex::-webkit-scrollbar{

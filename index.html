@@ -176,15 +176,17 @@
         <div class="bottom">
             <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
             <div class="icons">
-                <i class="fa-solid fa-repeat" id="repeat"><span id="repeatm" style="color:grey">Repeat Off</span></i>
+                <i class="fa-solid fa-repeat " id="repeat"><span class="tooltip"id="repeatm" >Repeat Off</span></i>
                 <!-- fontawesome icons-->
-                <i class="fas fa-3x fa-backward-fast" id="previous"></i>
-                <i class="fa-regular fa-circle-play" id="masterPlay" style="color:red"></i> 
-                <i class="fas fa-3x fa-forward" id="next"></i>
+                <i class="fas fa-3x fa-backward-fast" id="previous"><span class="tooltip" id="previousm">Previous</span></i>
+                <i class="fa-regular fa-circle-play " id="masterPlay" style="color:red"><span class="tooltip" id="playm"> Play</span></i> 
+                <i class="fas fa-3x fa-forward " id="next"><span class="tooltip" id="nextm">Next</span></i>
+                <i class="fa-solid fa-shuffle " id="shuffle"><span class="tooltip"id="shufflem">Shuffle</span></i>
+                <i class="fa-regular fa-rectangle-list" id="queue"><span class="tooltip" id="queuem">Queue</span></i>
             </div>
             <span class="time"></span>
             <div class="songinfo">
-                <img src="" width="40px"  id="gif" alt=""><span id="mastersongname"></span>
+                <img src=""   id="cover"style="width:40px" alt=""><span id="mastersongname"></span>
             </div>
         </div>
 
