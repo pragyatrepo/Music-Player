@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:840px)" href="phone.css">
 </head>
 <body>
     <!-- navigation bar -->
@@ -16,7 +17,7 @@
             <li>Podcasts</li>
             <li>Download app</li>
             <li><input type="text" placeholder="Search music or Artists You love"/></li>
-            <li class="modem"><i class="fa-solid fa-sun" id="mode" onclick="theme()" ></i><span id="modetip">Switch to light mode</span></li>
+            <abbr title="Switch to Light Mode" id="modem"><li><i class="fa-solid fa-sun"id="mode"onclick="theme()"></i></li></abbr>
             <li>Sign Up</li>
             <li>Login</li>
         </ul>
@@ -37,22 +38,22 @@
             <div class="height width border"><img class="height width border"src="images/punjabi.webp" alt="punjabi hits"></div>
             </a>
             <a href="romantic">
-            <div class="height width border"><img class="height width border"src="images/romantic.webp" alt="punjabi hits"></div>
+            <div class="height width border"><img class="height width border"src="images/romantic.webp" alt="romantic hits"></div>
             </a>
             <a href="bhojpuri">
-            <div class="height width border"><img class="height width border"src="images/bhojpuri.webp" alt="punjabi hits"></div>
+            <div class="height width border"><img class="height width border"src="images/bhojpuri.webp" alt="bhojpuri hits"></div>
             </a>
             <a href="pop">
-            <div class="height width border"><img class="height width border"src="images/pop.webp" alt="punjabi hits"></div>
+            <div class="height width border"><img class="height width border"src="images/pop.webp" alt="pop hits"></div>
             </a>
             <a href="bill">
-            <div class="height width border"><img class="height width border"src="images/english.webp" alt="punjabi hits"></div>
+            <div class="height width border"><img class="height width border"src="images/english.webp" alt="english hits"></div>
             </a>
             <a href="qawalli">
-            <div class="height width border"><img class="height width border"src="images/qawwali.jpg" alt="punjabi hits"></div>
+            <div class="height width border"><img class="height width border"src="images/qawwali.jpg" alt="qawwali hits"></div>
             </a>
             <a href="bill">
-            <div class="height width border"><img class="height width border"src="images/sufi.jpg" alt="punjabi hits"></div>
+            <div class="height width border"><img class="height width border"src="images/sufi.jpg" alt="sufi hits"></div>
             </a>
             </div>    
         </div>
@@ -67,43 +68,44 @@
             <button class="scroll"id="right-scroll1"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="flex" id="recents">
                 <a class="text" href="punjabi">
-                <div><img class="height_1 width_1 border"src="images/recent1.jpg" alt="punjabi hits"><br>Dil Diya Gallan<br><div style="color:grey">Atif Aslam-Ek Tha Tiger</div></div>
+                <div class><img class="height_1 width_1 border"src="images/recent1.jpg" alt="punjabi hits"><br><span class="text-overflow">Kana Yari</span><br><div class="text-overflow"style="color:grey">Coke Studio</div></div>
                 </a>
                 <a class="text" href="romantic">
-                <div ><img class="height_1 width_1 border"src="images/recent2.jpg" alt="punjabi hits"><br>Tum hi ho<br><div style="color:grey">Arijit Singh-Aashiqui 2</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent2.jpg" alt="punjabi hits"><br><span class="text-overflow">Excuses</span><br><div class="text-overflow"style="color:grey">Gurinder Gill</div></div>
                 </a>
                 <a class="text" href="bhojpuri">
-                <div ><img class="height_1 width_1 border"src="images/recent3.jpg" alt="punjabi hits"><br>Hymn for the weekend<br><div style="color:grey">Coldplay-Coldplay</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent3.jpg" alt="punjabi hits"><br><span class="text-overflow">Har Har Sambhu</span><br><div class="text-overflow"style="color:grey">Abhilipsa Panda</div></div>
                 </a>
                 <a class="text" href="pop">
-                <div ><img class="height_1 width_1 border"src="images/recent4.jpg" alt="punjabi hits"><br>The wall<br><div style="color:grey">Pink Floyd-Pink Floyd</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent4.jpg" alt="punjabi hits"><span class="text-overflow">The Wall</span><div class="text-overflow"style="color:grey">Pink Floyd-Pink Floyd</div></div>
                 </a>
                 <a class="text" href="bill">
-                <div ><img class="height_1 width_1 border"src="images/recent5.jpg" alt="punjabi hits"><br>All i ever wanted<br><div style="color:grey">Basshunter</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent5.jpg" alt="punjabi hits"><br><span class="text-overflow">All I Ever Wanted</span><br><div class="text-overflow"style="color:grey">Basshunter</div></div>
                 </a>
                 <a class="text" href="bill">
-                <div ><img class="height_1 width_1 border"src="images/recent6.jpg" alt="punjabi hits"><br>Kacha Badam<br><div style="color:grey">Bhuvan Badyankar</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent6.jpg" alt="punjabi hits"><br><span class="text-overflow">Kaccha Badam</span><br><div class="text-overflow"style="color:grey">Bhuvan Badyankar</div></div>
                 </a>
                 <a class="text" href="punjabi">
-                <div><img class="height_1 width_1 border"src="images/recent7.jpg" alt="punjabi hits"><br>Dil Diya Gallan<br><div style="color:grey">Atif Aslam-Ek Tha Tiger</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent7.jpg" alt="punjabi hits"><br><span class="text-overflow">Laal Ghagra</span><br><div class="text-overflow"style="color:grey">Neha Kakkar</div></div>
                 </a>
                 <a class="text" href="romantic">
-                <div ><img class="height_1 width_1 border"src="images/recent8.jpg" alt="punjabi hits"><br>Tum hi ho<br><div style="color:grey">Arijit Singh-Aashiqui 2</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent8.jpg" alt="punjabi hits"><br><span class="text-overflow">Jene Mera Dil Luteya</span><br><div class="text-overflow"style="color:grey">Jazzy B</div></div>
                 </a>
                 <a class="text" href="bhojpuri">
-                <div ><img class="height_1 width_1 border"src="images/recent9.jpg" alt="punjabi hits"><br>Hymn for the weekend<br><div style="color:grey">Coldplay-Coldplay</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent9.jpg" alt="punjabi hits"><br><span class="text-overflow">Koka</span><br><div class="text-overflow"style="color:grey">Badshah-Khadani Safakhana</div></div>
                 </a>
                 <a class="text" href="pop">
-                <div ><img class="height_1 width_1 border"src="images/recent10.jpg" alt="punjabi hits"><br>The wall<br><div style="color:grey">Pink Floyd-Pink Floyd</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent10.jpg" alt="punjabi hits"><br><span class="text-overflow">Thoda Thoda Pyar</span><br><div class="text-overflow"style="color:grey">Stebin ben</div></div>
                 </a>
                 <a class="text" href="bill">
-                <div ><img class="height_1 width_1 border"src="images/recent11.jpg" alt="punjabi hits"><br>All i ever wanted<br><div style="color:grey">Basshunter</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent11.jpg" alt="punjabi hits"><br><span class="text-overflow">Aashiqui Aa Gayi</span><br><div class="text-overflow"style="color:grey">Arijit Singh-Radheshyam</div></div>
                 </a>
                 <a class="text" href="bill">
-                <div ><img class="height_1 width_1 border"src="images/recent12.jpg" alt="punjabi hits"><br>Kacha Badam<br><div style="color:grey">Bhuvan Badyankar</div></div>
+                <div><img class="height_1 width_1 border"src="images/recent12.jpg" alt="punjabi hits"><br><span class="text-overflow">Bakhuda</span><br><div class="text-overflow"style="color:grey">Atif Aslam-Kisamat Konnection</div></div>
                 </a>
             </div>
         </div>
+
 
         <!-- recently played ends here -->
 
@@ -114,83 +116,100 @@
             <button class="scroll"id="left-scroll2"><i class="fa-solid fa-chevron-left"></i></button>
             <button class="scroll"id="right-scroll2"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="flex">
-                <a class="text" href="punjabi">
-                <div><img class="height_1 width_1 border"src="images/recent1.jpg" alt="punjabi hits"><br>Dil Diya Gallan<br><div style="color:grey">Atif Aslam-Ek Tha Tiger</div></div>
+                <a class="text" href="#">
+                <div ><img class="height_1 width_1 border "src="images/recent1.jpg" alt=""><br><span class="text-overflow">Your mix 1</span><br><div class="text-overflow"style="color:grey">Badshsas,Tanishk baghchi,Arijit </div></div>
                 </a>
-                <a class="text" href="romantic">
-                <div ><img class="height_1 width_1 border"src="images/recent2.jpg" alt="punjabi hits"><br>Tum hi ho<br><div style="color:grey">Arijit Singh-Aashiqui 2</div></div>
+                <a class="text" href="#">
+                <div><img class="height_1 width_1 border"src="images/recent2.jpg" alt=""><br><span class="text-overflow">Your mix 2</span><br><div class="text-overflow"style="color:grey">Badshsas,Tanishk baghchi,Arijit </div></div>
                 </a>
-                <a class="text" href="bhojpuri">
-                <div ><img class="height_1 width_1 border"src="images/recent3.jpg" alt="punjabi hits"><br>Hymn for the weekend<br><div style="color:grey">Coldplay-Coldplay</div></div>
+                <a class="text" href="#">
+                <div><img class="height_1 width_1 border"src="images/recent3.jpg" alt=""><br><span class="text-overflow">Your mix 3</span><br><div class="text-overflow"style="color:grey">Badshsas,Tanishk baghchi,Arijit </div></div>
                 </a>
-                <a class="text" href="pop">
-                <div ><img class="height_1 width_1 border"src="images/recent4.jpg" alt="punjabi hits"><br>The wall<br><div style="color:grey">Pink Floyd-Pink Floyd</div></div>
+                <a class="text" href="#">
+                <div><img class="height_1 width_1 border"src="images/recent4.jpg" alt=""><br><span class="text-overflow">Your mix 4</span><br><div class="text-overflow"style="color:grey">Badshsas,Tanishk baghchi,Arijit </div></div>
                 </a>
-                <a class="text" href="bill">
-                <div ><img class="height_1 width_1 border"src="images/recent5.jpg" alt="punjabi hits"><br>All i ever wanted<br><div style="color:grey">Basshunter</div></div>
+                <a class="text" href="#">
+                <div><img class="height_1 width_1 border "src="images/recent5.jpg" alt=""><br><span class="text-overflow">Your mix 5</span><br><div class="text-overflow"style="color:grey">Badshsas,Tanishk baghchi,Arijit </div></div>
                 </a>
-                <a class="text" href="bill">
-                <div ><img class="height_1 width_1 border"src="images/recent6.jpg" alt="punjabi hits"><br>Kacha Badam<br><div style="color:grey">Bhuvan Badyankar</div></div>
+                <a class="text" href="#">
+                <div><img class="height_1 width_1 border"src="images/recent6.jpg" alt=""><br><span class="text-overflow">Your mix 6</span><br><div class="text-overflow"style="color:grey">Badshsas,Tanishk baghchi,Arijit </div></div>
                 </a>
             </div>
         </div>
-        </div>
+    </div>
 
         <!-- personalised playlist ends here -->
         <!-- <div class="container">
             
-            <div class="songlist">
-                <h1>praggu and smita love</h1>
-                <div>
-                    <div class="songitem">
-                        <img src="logo.JPG" alt="1">
-                        <span class="songname">let me love you</span>
-                        <span class="songlistplay"><span class="dur">05:34</span> <i id='1' class=" songitemplay fas fa-play-circle"></i> </span>
-                        
-                    </div>
-                </div>
-                <div>
-                    <div class="songitem">
-                        <img src="logo.JPG" alt="1">
-                        <span class="songname">let me love you</span>
-                        <span class="songlistplay"><span class="dur">05:34</span> <i  id='2' class=" songitemplay fas fa-play-circle"></i> </span>
-                        
-                    </div>
-                </div>
-                <div>
-                    <div class="songitem">
-                        <img src="logo.JPG" alt="1">
-                        <span class="songname">let me love you</span>
-                        <span class="songlistplay"><span class="dur">05:34</span> <i id='3' class=" songitemplay fas fa-play-circle"></i> </span>
-                        
-                    </div>
-                </div>
+            
             </div>
             
             <div class="album"></div>
         </div>
         </div> -->
 
+        <!-- footer -->
+        <footer class="margins">
+            <hr>
+            <div style="height:10vh; position:relative">
+                <ul class="footer" style="height:10vh">
+                    <li>ABOUT US</li>
+                    <li class="border-left">ADVERTISE WITH US</li>
+                    <li class="border-left">PRIVACY POLICY</li>
+                    <li class="border-left">TERMS OF USE</li>
+                    <li class="border-left">CONTACT US</li>
+                    <li class="border-left">FEEDBACK </li>
+                </ul>
+                <ul class="icon-width">
+                    <li><div class="bg"><i class="fa-brands fa-instagram"></i></div></li>
+                    <li><div class="bg"><i class="fa-brands fa-twitter"></i></div></li>
+                    <li><div class="bg"><i class="fa-brands fa-facebook"></i></div></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="margin-top">
+                <div class="downloads">
+                    <p>Dont forget to install music player on your phone</p>
+                     <div class="download">
+                        <a href="#"class="adjust"><i class="fa-brands fa-google-play"><br><p>Get It On Play Store</p></i></a>
+                        <a href="#"class="adjust"><i class="fa-brands fa-apple"><br><p>Get It On Apple Store</p></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>2022 Copyright&copy</p>
+                <p> www.musicplayer.com </p>
+                <p>All Rights Reserved</p>
+            </div>
+        </footer>  
+        
         <!-- bottom section starts here -->
 
-        <div class="bottom">
+    <div class="bottom">
             <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
             <div class="icons">
-                <i class="fa-solid fa-repeat " id="repeat"><span class="tooltip"id="repeatm" >Repeat Off</span></i>
+                <abbr title="Repeat Off" id="repeatm" ><i class="fa-solid fa-repeat " id="repeat"></i></abbr>
                 <!-- fontawesome icons-->
-                <i class="fas fa-3x fa-backward-fast" id="previous"><span class="tooltip" id="previousm">Previous</span></i>
-                <i class="fa-regular fa-circle-play " id="masterPlay" style="color:red"><span class="tooltip" id="playm"> Play</span></i> 
-                <i class="fas fa-3x fa-forward " id="next"><span class="tooltip" id="nextm">Next</span></i>
-                <i class="fa-solid fa-shuffle " id="shuffle"><span class="tooltip"id="shufflem">Shuffle</span></i>
-                <i class="fa-regular fa-rectangle-list" id="queue"><span class="tooltip" id="queuem">Queue</span></i>
+                <abbr title="Previous" id="previousm" ><i class="fas fa-3x fa-backward-fast" id="previous"></i></abbr>
+                <abbr title="Play" id="playm" ><i class="fa-regular fa-circle-play "id="masterPlay"  style="color:red"></i></abbr> 
+                <abbr title="Next" id="nextm" ><i class="fas fa-3x fa-forward " id="next"></i></abbr>
+                <abbr title="Shuffle" id="shufflem" ><i class="fa-solid fa-shuffle " id="shuffle"></i></abbr>
+                <abbr title="Queue" id="queuem" ><i class="fa-regular fa-rectangle-list" id="queue"></i></abbr>
             </div>
             <span class="time"></span>
             <div class="songinfo">
-                <img src=""   id="cover"style="width:40px" alt=""><span id="mastersongname"></span>
+                <img src=""   id="cover" alt=" "><span id="mastersongname"></span>
             </div>
+    </div>
+    <div id="queues">     
+        <div class="queue-left"><span id="queuedisplay">queue off</span>
+            <span><h1>Now Playing</h1></span><br><img src="images/recent3.jpg" alt=""><br><span></span><br><span></span>
         </div>
+    </div>
+    
 
-        <!-- botttom section ends here -->
+    <!-- botttom section ends here -->
+    
     <script src="https://kit.fontawesome.com/5386966388.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
