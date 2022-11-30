@@ -1,0 +1,70 @@
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    background: url(/images/recent1.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+    background-color:black;
+
+}
+.container{
+    position: relative;
+    height: 100vh;
+    background-color:rgba(0,0,0, 0.7) ;
+}
+.left{
+    width: 30%;
+    float: left;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
+.left img{
+    border-radius: 15px;
+}
+.buttons{
+    position: absolute;
+    margin-top: 2rem;
+}
+.buttons button{
+    border: solid 2px beige;
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    border-radius: 14px;
+    color: aliceblue;
+    background-color: rgba(0,0,0,0.3);
+
+}
+#share{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 2.2rem;
+    background-color: rgba(0, 0,0,0.5);
+    color: aliceblue;
+}
+#songname{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.right{
+    position: relative;
+    top: 2rem;
+    left:2rem;
+    width: 70%;
+    float: right;
+}
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+}

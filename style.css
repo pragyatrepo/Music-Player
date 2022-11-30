@@ -63,6 +63,33 @@ li input{
     background-color:var(--background);
     color:var(--color);
 }
+
+/* form */
+
+#form{
+    display:none;
+    position: fixed;
+    width: 600px;
+    height: 400px;
+    z-index: 3;
+    top: 10%;
+    left: 30%;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+#form form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+form input{
+    background-color:rgba(0,0,0,0.5);
+    height: 30px;
+    width: 20vw;
+    border-radius: 10px;
+}
    /* trending */
 
 .trending{
